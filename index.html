@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Form</title>
+  <link rel="stylesheet" href="../sass/card-form.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="left-gradiant">
+      <div class="card-front">
+        <img src="../../images/bg-card-front.png" alt="card-front">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <span class="card-number" id="class-number">5555 5555 5555 5555</span>
+        <span class="cardholder-name" id="cardholder-name">Justas JustasJustas</span>
+        <span class="expiry-date" id="expiry-date">11/22</span>
+      </div>
+
+      <div class="card-back">
+        <img src="../../images/bg-card-back.png" alt="card-back">
+        <span class="cvc-number" id="cvc-number">111</span>
+      </div>
+    </div>
+    
+    <div class="card-form">
+      <form method="POST" target="_blank">
+        <label for="fname">Cardholder Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="card_number">Card Number</label>
+        <input type="text" id="card_number" name="card_number">
+        <label for="expiry_date">Exp. Date (MM/YY)</label>
+        <input type="text" id="expiry_date" name="expiry_date">
+        <label for="cvc_number">CVC</label>
+        <input type="text" id="cvc_number" name="cvc_number">
+        <button>Confirm</button>
+      </form>
+    </div>
+
+  </div>
+
+  <script src="../js/index.js"></script>
+</body>
+</html>

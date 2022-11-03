@@ -1,0 +1,108 @@
+@import url("https://fonts.google.com/specimen/Space+Grotesk");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 4fr;
+      grid-template-columns: 2fr 4fr;
+  height: 100vh;
+}
+
+.left-gradiant {
+  background-image: url("../../images/bg-main-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.left-gradiant .card-front {
+  position: relative;
+  top: 20%;
+  left: 45%;
+  color: white;
+}
+
+.left-gradiant .card-front .circle1 {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.left-gradiant .card-front .circle2 {
+  position: absolute;
+  top: 15%;
+  left: 17%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.left-gradiant .card-front .card-number {
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  font-size: 30px;
+  letter-spacing: 0.3rem;
+}
+
+.left-gradiant .card-front .cardholder-name {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+}
+
+.left-gradiant .card-front .expiry-date {
+  position: absolute;
+  top: 80%;
+  left: 350px;
+  float: right;
+  letter-spacing: 0.15rem;
+}
+
+.left-gradiant .card-back {
+  position: relative;
+  top: 25%;
+  left: 60%;
+  color: white;
+}
+
+.left-gradiant .card-back .cvc-number {
+  position: absolute;
+  top: 110px;
+  left: 360px;
+}
+
+.card-form {
+  margin: auto;
+}
+
+.card-form input {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.card-form input {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+}
+/*# sourceMappingURL=card-form.css.map */
