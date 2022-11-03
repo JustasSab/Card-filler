@@ -14,28 +14,35 @@
         <img src="../../images/bg-card-front.png" alt="card-front">
         <div class="circle1"></div>
         <div class="circle2"></div>
-        <span class="card-number" id="class-number">5555 5555 5555 5555</span>
-        <span class="cardholder-name" id="cardholder-name">Justas JustasJustas</span>
-        <span class="expiry-date" id="expiry-date">11/22</span>
+        <span class="card-number" id="class-number">0000 0000 0000 0000</span>
+        <span class="cardholder-name" id="cardholder-name">Jane Applesseed</span>
+        <span class="expiry-date" id="expiry-date">00/00</span>
       </div>
 
       <div class="card-back">
         <img src="../../images/bg-card-back.png" alt="card-back">
-        <span class="cvc-number" id="cvc-number">111</span>
+        <span class="cvc-number" id="cvc-number">000</span>
       </div>
     </div>
     
     <div class="card-form">
-      <form method="POST" target="_blank">
-        <label for="fname">Cardholder Name:</label>
-        <input type="text" id="name" name="name">
+      <form>
+        <label for="name">Cardholder Name</label>
+        <input type="text" id="name" placeholder="e.g. Jane Applesseed">
         <label for="card_number">Card Number</label>
-        <input type="text" id="card_number" name="card_number">
-        <label for="expiry_date">Exp. Date (MM/YY)</label>
-        <input type="text" id="expiry_date" name="expiry_date">
-        <label for="cvc_number">CVC</label>
-        <input type="text" id="cvc_number" name="cvc_number">
-        <button>Confirm</button>
+        <input type="text" id="card_number" placeholder="e.g. 1234 5678 9123 0000">
+        <div class="field-button">
+          <label for="expirationdate">Exp. Date (MM/YY)</label>
+          <div class="field-container">
+            <input type="text" id="expirationdateMM" placeholder="MM">
+            <input type="text" id="expirationdateYY" placeholder="YY">
+          </div>
+          <label for="cvc_number">CVC</label>
+          <input type="text" id="cvc_number" placeholder="e.g. 123">
+        </div>
+
+
+        <input type="submit" value="Confirm">
       </form>
     </div>
 

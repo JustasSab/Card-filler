@@ -85,24 +85,58 @@ body {
   position: absolute;
   top: 110px;
   left: 360px;
+  letter-spacing: 0.15rem;
 }
 
 .card-form {
   margin: auto;
 }
 
-.card-form input {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.card-form form {
+  width: 500px;
 }
 
-.card-form input {
+.card-form form label {
+  font-weight: 600;
+  color: #21092f;
+  text-transform: uppercase;
+}
+
+.card-form form input[type=text] {
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
-  padding: 0.5rem 0.75rem;
+  padding: 0.75rem 0.5rem;
+  border: 1px solid rgba(142, 133, 147, 0.5);
+  border-radius: 10px;
+  font-size: 18px;
+  margin: 5px 0 20px 0;
+}
+
+.card-form form input[type=text]::-webkit-input-placeholder {
+  color: rgba(142, 133, 147, 0.5);
+}
+
+.card-form form input[type=text]:-ms-input-placeholder {
+  color: rgba(142, 133, 147, 0.5);
+}
+
+.card-form form input[type=text]::-ms-input-placeholder {
+  color: rgba(142, 133, 147, 0.5);
+}
+
+.card-form form input[type=text]::placeholder {
+  color: rgba(142, 133, 147, 0.5);
+}
+
+.card-form form .field-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-form form .field-container input {
+  width: 70px;
 }
 /*# sourceMappingURL=card-form.css.map */
